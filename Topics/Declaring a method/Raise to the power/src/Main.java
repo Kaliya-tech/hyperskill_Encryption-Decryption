@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Main {
 
     public static long power(int n, int m) {
-        // write your code here
+
+        //double result = Math.pow(n, m);
+        return (long) Math.pow(n, m);
     }
 
     /* Do not change code below */

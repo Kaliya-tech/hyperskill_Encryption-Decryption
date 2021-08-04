@@ -11,5 +11,9 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/12441#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: |
+    Failed test #1 of 4. Wrong answer
+  time: Thu, 29 Jul 2021 13:42:55 UTC
 record: -1

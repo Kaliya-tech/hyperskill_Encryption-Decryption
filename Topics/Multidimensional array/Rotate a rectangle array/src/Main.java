@@ -6,8 +6,5 @@ class Main {
         int n = scanner.nextInt();
         int m = scanner.nextInt();
 
-        
-        String one = n * (scanner.nextLine())
-
     }
 }

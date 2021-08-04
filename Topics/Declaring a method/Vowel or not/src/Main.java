@@ -3,7 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static boolean isVowel(char ch) {
-        // write your code here
+        char[] vowel = "aeiouAEIOU".toCharArray();
+        for (int i = 0; i < vowel.length; i++) {
+            if (ch == vowel[i]) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /* Do not change code below */

@@ -12,5 +12,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/10613#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 29 Jul 2021 12:01:21 UTC
 record: -1

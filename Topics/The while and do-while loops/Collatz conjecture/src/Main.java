@@ -17,7 +17,6 @@ class Main {
                 nextN = num * 3 + 1;
                 sequence.append(nextN);
             }
-
         }
         System.out.println(sequence);
     }

@@ -1,29 +1,41 @@
 package encryptdecrypt;
-import java.util.Arrays;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        String operation = scanner.nextLine();
         String input = scanner.nextLine();
-        String[] inp = input.split("");
-        System.out.println(Arrays.toString(inp));
-
         int key = scanner.nextInt();
-        String abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        int addChar = 0;
-        String result = "";
 
-        int i = 0;
 
-        inp[i] = abc.substring(i + key);
-        result += inp[i];
+        if (operation.equals("enc")) {
+            enc(input, key);
+        } else {
+            dec(input, key);
+        }
+    }
+
+    public static void enc(String input, int key) {
+
+        int addChar;
+
+        for (int i = 0; i < input.length(); i++) {
+            addChar = input.charAt(i);
+            if (addChar <= 122 && addChar >= 97) {
+                if (addChar + key > 122) {
+                    addChar = addChar + key - 26;
+                } else {
+                    addChar = addChar + key;
+                }
+            }
+            System.out.print((char)addChar);
+        }
+    }
+
+    public static void dec(String input, int key) {
+
     }
 
 }
-// inp[i] = String.valueOf(abc.charAt(i + key));
-// result += inp[i];
-// b.append(result);
-// System.out.print(b.toString());

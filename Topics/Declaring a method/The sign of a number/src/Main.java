@@ -3,7 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static int sign(int number) {
-        // write your code here
+        if (number < 0) {
+            return -1;
+        } else if (number == 0) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 
     /* Do not change code below */

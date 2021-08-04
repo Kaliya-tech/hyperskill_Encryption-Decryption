@@ -13,14 +13,12 @@ public class Main {
     public static long sumInRange(int from, int to) {
         // write your code here
 
-        if (from == to) {
-            from = 0;
-        } else {
-            for (int i = from + 1; i < to; i++) {
-                from = from + i;
-            }
+        long sum = 0;
+
+        for (int i = from; i < to; i++) {
+            sum += i;
         }
-        return from;
+        return sum;
     }
 
     /* Do not change code below */
